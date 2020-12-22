@@ -1,7 +1,7 @@
 import random
 
 class GuessNumber:
-    def __init__(self, number, mn=0, mx=100): # mn und mx sind Werte, die benutzt werden, falls vom Benutzer keine eingegeben werden
+    def __init__(self, number, mn=0, mx=100): # mn and mx have default values if there are no values from the user
         self.number = number
         self.guesses = 0
         self.min = mn
@@ -39,7 +39,7 @@ class GuessNumber:
             
             print(f"You guessed it in {self.guesses} guesses.")
 
-print("This is game which will guess a radom number")
+print("This is a game which will guess a radom number. Please use integers only.")
 mn = int(input("Please enter the minimum number: "))
 mx = int(input("Please enter the maximum number: "))
 
